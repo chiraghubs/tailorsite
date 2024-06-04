@@ -8,7 +8,7 @@ const userSlice = createSlice({
     reducers:{
         userStatus: (state,action)=>{
           state.islogin = !state.islogin
-          console.log(state.islogin);
+          
         },
        
     }
