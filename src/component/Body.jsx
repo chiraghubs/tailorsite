@@ -7,6 +7,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from '../utils/firebase';
 import { useDispatch } from 'react-redux';
 import { addUser, removeUser } from '../utils/userLoginSlice';
+import Cart from './Cart';
 
 const Body = () => {
   const dispath = useDispatch();
@@ -19,7 +20,11 @@ const Body = () => {
     {
       path:"/brows",
       element:<Brows/>
-    }
+    },
+    {
+      path:"/cart",
+      element:<Cart/>
+    },
   ])
 
   // useEffect(()=>{
