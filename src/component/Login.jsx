@@ -119,6 +119,35 @@ else{return (
     <h1 className='absolute top-72 left-36 text-4xl'>TAILORED FOR YOU, PRICED  </h1>
     <h1 className='absolute top-[22rem] left-36 text-4xl'>FOR EVERYONE </h1>
     </div>
+    <div className='absolute top-[50rem] m-2 p-2 flex'>
+      <ul className='flex justify-center  w-[1300px] '>
+        <li className='flex m-1 mr-8 p-3 border border-lime-500'>
+          <img src='https://fabcurate.com/cdn/shop/files/india_map.png?v=1665947291&width=710'></img>
+          <p className='ml-1'>Make in india</p>
+        </li>
+        <li className='flex m-1 mr-5 p-3 border border-lime-500'>
+          <img src='https://fabcurate.com/cdn/shop/files/ThumbsUp.png?v=1665947291&width=710'></img>
+          <p className='ml-1'>Assured Quality</p>
+        </li>
+        <li className='flex m-1 mr-5 p-3 border border-lime-500'>
+          <img src='https://fabcurate.com/cdn/shop/files/ThumbsUp.png?v=1665947291&width=710'></img>
+          <p className='ml-1'>Cash On Delivery</p>
+        </li>
+        <li className='flex m-1 mr-5 p-3 border border-lime-500'>
+          <img src='https://fabcurate.com/cdn/shop/files/Fast_Delivery.png?v=1665947291&width=710'></img>
+          <p className='ml-1'>Fast Shipping</p>
+        </li>
+        <li className='flex m-1 mr-5 p-3 border border-lime-500'>
+          <img src='https://fabcurate.com/cdn/shop/files/Package.png?v=1665947291&width=710'></img>
+          <p className='ml-1'>Easy Returns</p>
+        </li>
+        <li className='flex m-1 mr-5 p-3 border border-lime-500'>
+          <img className='w-8' src='https://fabcurate.com/cdn/shop/files/Customized_printing.png?v=1671606689&width=710'></img>
+          <p className='ml-1'>Custom Printing</p>
+        </li>
+      </ul>
+    </div>
+    
    </div>
   
  )

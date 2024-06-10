@@ -7,6 +7,7 @@ import CartList from './CartList'
 
 const Cart = () => {
     const cart =useSelector((store)=>store.cart)
+    console.log(cart.item);
     
     if(cart.item.length==0) {return(<div>
         <Header/>
@@ -26,7 +27,7 @@ const Cart = () => {
     <h1 className='text-3xl'>Cart</h1>
     <h1 className='text-3xl ml-10'>Total:{cart.item.reduce((acc,cur)=>acc + cur.price,0)} rs</h1>
     </div>
-    <div className=' p-2'>{cart.item.map((x)=>(<CartList key={x.id} name={x.name} imgurl={x.imgurl} price={x.price}/>))} </div>
+    <div className=' p-2'>{cart.item.map((x,index)=>(<CartList key={index} name={x.name} imgurl={x.imgurl} price={x.price} id={x.id} cartQuantity={x.cartQuantity}/>))} </div>
     </div>
     </div>
       
