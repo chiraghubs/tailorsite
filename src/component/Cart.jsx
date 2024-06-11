@@ -25,7 +25,7 @@ const Cart = () => {
     <div className='text-center m-2 p-2'>
     <div className='flex ml-[38rem]'>
     <h1 className='text-3xl'>Cart</h1>
-    <h1 className='text-3xl ml-10'>Total:{cart.item.reduce((acc,cur)=>acc + cur.price,0)} rs</h1>
+    <h1 className='text-3xl ml-10'>Total:{cart.item.reduce((acc,cur)=>acc + cur.price*cur.cartQuantity,0)} rs</h1>
     </div>
     <div className=' p-2'>{cart.item.map((x,index)=>(<CartList key={index} name={x.name} imgurl={x.imgurl} price={x.price} id={x.id} cartQuantity={x.cartQuantity}/>))} </div>
     </div>

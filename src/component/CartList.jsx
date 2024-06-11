@@ -21,11 +21,12 @@ const handleadd = ()=>{
       <img src={imgurl} className='p-1 rounded-lg' ></img>
       <div className='flex flex-col mt-11 ml-11'>
       <p className=''>{name}</p>
-      <p className=''>{price+" rss"}</p>
-      <p className=''>{id}</p>
+      <p className=''>{price+" rs"}</p>
+      <p className=''>{"Total Price "+price*cartQuantity+" rs"}</p>
+      {/* <p className=''>{id}</p> */}
       <p className=''>{"Qty:-"+cartQuantity}</p>
-      <button onClick={()=>handleDecrease(imgurl,name,price,id)} className='rounded-full flex flex-row absolute mt-[4.5rem] ml-20  w-4 bg-red-400'>-</button>
-      <button onClick={()=>handleadd(imgurl,name,price,id)} className='rounded-full flex flex-row absolute mt-[4.5rem] ml-2  w-4 bg-green-400'>+</button>
+      <button onClick={()=>handleDecrease(imgurl,name,price,id)} className='rounded-full flex flex-row absolute mt-[4.5rem] ml-24   w-4 bg-red-400 hover:bg-red-300'>-</button>
+      <button onClick={()=>handleadd(imgurl,name,price,id)} className='rounded-full flex flex-row absolute mt-[4.5rem] ml-2  w-4 bg-green-400 hover:bg-green-300'>+</button>
       <button  onClick={()=>handleadd(imgurl,name,price,id)} className='bg-green-500 p-1 m-1 rounded-lg hover:bg-green-400'>Add</button>
       <button  onClick={()=>handleremove(id,imgurl,name,price)} className='bg-red-500 p-1 m-1 rounded-lg hover:bg-red-400'>Remove</button>
       </div>

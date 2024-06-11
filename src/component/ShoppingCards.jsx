@@ -13,7 +13,7 @@ const handleadd = ()=>{
     <div className='h-[22rem] mt-5 ml-2 bg-red-200 w-60 rounded-lg'>
       <img src={imgurl} className='p-1 rounded-lg' ></img>
       <p className=''>{name}</p>
-      <p className=''>{price+" rss"}</p>
+      <p className=''>{price+" rs"}</p>
       <button onClick={()=>handleadd(imgurl,name,price)} className='bg-green-500 p-1 m-1 rounded-lg hover:bg-green-400'>Add To Cart</button>
     </div>
   )
